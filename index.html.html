@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexIT // Advanced Tech Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Apex<span>IT</span></div>
+        <nav class="nav-links">
+            <a href="#hero" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="#contact" class="btn btn-primary">Get Started</a>
+            <button class="menu-toggle" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Next-Gen Tech Partners</span>
+            <h1>Engineering Digital Transformation</h1>
+            <p>We deliver advanced cloud architecture, bespoke software engineering, and robust cybersecurity solutions designed to scale your enterprise ecosystem.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#portfolio" class="btn btn-secondary">View Work</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="tech-glow-circle"></div>
+            <i class="fas fa-network-wired floating-icon"></i>
+        </div>
+    </section>
+
+    <!-- =======================================================
+         New Interactive Services Section
+         ======================================================= -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <span class="badge">Core Competencies</span>
+            <h2>Our Architectural Services</h2>
+            <p>We build resilient, secure, and highly scalable digital infrastructures tailored for your enterprise growth.</p>
+        </div>
+        <div class="services-grid">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud Architecture</h3>
+                <p>Enterprise-grade cloud migration, Serverless engineering, infrastructure as code (IaC), and resilient multi-region backup systems.</p>
+            </div>
+            <!-- Service 2 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3>Software Engineering</h3>
+                <p>Bespoke software development, custom API integrations, and robust microservices architecture using modern tech stacks.</p>
+            </div>
+            <!-- Service 3 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Cybersecurity Solutions</h3>
+                <p>End-to-end security audits, active penetration testing, threat detection, and advanced compliance enforcement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Testimonials & Live Stats Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="section-header">
+            <h2>What Our Clients Say</h2>
+            <p>Trusted by modern enterprises to deliver structural technical engineering.</p>
+        </div>
+        
+        <!-- Testimonials Grid -->
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"ApexIT overhauled our entire cloud architecture. Deployment cycles dropped from days to minutes, and system downtime hit absolute zero."</p>
+                <div class="client-info">
+                    <h4>Sarah Jenkins</h4>
+                    <span>CTO, FinTech Global</span>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Their custom software engineering solved structural friction points that our internal development teams struggled with for months."</p>
+                <div class="client-info">
+                    <h4>Marcus Vance</h4>
+                    <span>VP of Product, CloudScale</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Website Performance Metrics Counter -->
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <div class="stat-number" id="visitor-count">1,420</div>
+                <div class="stat-label">Total Website Visits</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-icon pulse-icon"><i class="fas fa-globe"></i></div>
+                <div class="stat-number" id="active-count">12</div>
+                <div class="stat-label">Active Users Online</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-header">
+            <h2>Proven Track Record</h2>
+            <p>Explore some of our recently deployed structural engineering feats.</p>
+        </div>
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">All Solutions</button>
+            <button class="filter-btn" data-filter="cloud">Cloud</button>
+            <button class="filter-btn" data-filter="dev">Development</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item show" data-category="cloud">
+                <div class="portfolio-img" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);"></div>
+                <div class="portfolio-info">
+                    <span>Cloud Architecture</span>
+                    <h3>SaaS Platform Migration</h3>
+                </div>
+            </div>
+            <div class="portfolio-item show" data-category="dev">
+                <div class="portfolio-img" style="background: linear-gradient(135deg, #10b981, #047857);"></div>
+                <div class="portfolio-info">
+                    <span>Development</span>
+                    <h3>FinTech Banking Core Application</h3>
+                </div>
+            </div>
+            <div class="portfolio-item show" data-category="cloud">
+                <div class="portfolio-img" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);"></div>
+                <div class="portfolio-info">
+                    <span>Cloud Architecture</span>
+                    <h3>Automated CI/CD DevOps Pipeline</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Build Something Enterprise-Grade</h2>
+                <p>Reach out to discuss technology strategy alignment, system audits, or active project engineering requirements.</p>
+                <div class="info-list">
+                    <div class="info-item"><i class="fas fa-envelope"></i> mrkomban83@gmail.com</div>
+                    <div class="info-item"><i class="fas fa-phone-alt"></i> +94 75 469 9535</div>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required placeholder="Business Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" required placeholder="Project Parameters / Core Scope"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Deploy Inquiry <i class="fas fa-paper-plane"></i></button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ApexIT Ecosystems. All structural rights reserved.</p>
+    </footer>
+
+    <script src="popo2.js"></script>
+</body>
+</html>
